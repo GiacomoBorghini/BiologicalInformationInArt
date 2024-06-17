@@ -15,6 +15,8 @@ The last two has been taken from the File Exchange section of Matlab website (li
 
 ## Compositional Aesthetics Measures
 
+## Mutual-Information-based Partitioning
+
 
 # Wavelet domain Hidden Markov Trees
 
