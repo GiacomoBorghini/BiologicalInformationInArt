@@ -5,11 +5,11 @@ presented to NanoCom 2024 conference, titled "Detection of Biological Informatio
 
 # Informational Aesthetics
 ## Global Aesthetics Measures
-The main code to run to get the results is contained in **_Global_Aesthetics_general.m_** . This is main function and provides the graphics of the comparison, between AI and human paintings, of the M_H and M_K metrics. To run this code is necessary to have in the same folder the functions:
-* **_resize_save.m_**
-* **_M_H_K.m_**
-* **_natsort.m_**
-* **_natsortfiles.m_**
+The main code to run to get the results is contained in **Global_Aesthetics_general.m** . This is main function and provides the graphics of the comparison, between AI and human paintings, of the M_H and M_K metrics. To run this code is necessary to have in the same folder the functions:
+* **resize_save.m**
+* **M_H_K.m**
+* **natsort.m**
+* **natsortfiles.m**
 
 The last two has been taken from the File Exchange section of Matlab website (link: https://it.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
