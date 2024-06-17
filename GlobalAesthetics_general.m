@@ -31,10 +31,10 @@ image_structAI = natsortfiles(image_structAI);
 
 
 %Computes global aesthetic metrics for human artworks
-[M_bH,M_kH,Hp_H] = M_b_kCalculation(image_structH,Hfolder_RES);
+[M_HH,M_KH,Hp_H] = M_H_K_Calculation(image_structH,Hfolder_RES);
 
 %Computes global aesthetic metrics for human artworks
-[M_bAI,M_kAI,Hp_AI] = M_b_kCalculation(image_structAI,AIfolder_RES);
+[M_HAI,M_KAI,Hp_AI] = M_H_K_Calculation(image_structAI,AIfolder_RES);
 
 
 x = linspace(1,size(image_structAI,1),size(image_structAI,1));
@@ -42,7 +42,7 @@ x = linspace(1,size(image_structAI,1),size(image_structAI,1));
 
 %Creates graphics for all the computed metrics.
 figure
-bar(x,[M_bAI;M_bH])
+bar(x,[M_HAI;M_HH])
 
 ylim([0.3 0.6])
 title('AI vs. Human Relative Redundancy M_H')
@@ -51,7 +51,7 @@ ylabel('M_H')
 legend('AI','Human')
 
 figure
-bar(x,[M_kAI;M_kH])
+bar(x,[M_KAI;M_KH])
 
 ylim([0.85 1])
 title('AI vs. Human Kolmogorov Complexity M_K')
@@ -90,7 +90,6 @@ legend('AI','Human')
 % 
 % legend('Human','AI')
 % hold off
-
-
-
-
+% 
+% 
+% 
