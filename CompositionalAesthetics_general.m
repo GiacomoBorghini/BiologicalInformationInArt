@@ -32,12 +32,12 @@ image_structH = natsortfiles(image_structH);
 image_structAI = natsortfiles(image_structAI);
 
 %Computes global aesthetic metrics for human artworks
-[M_jH] = M_jCalculation(image_structH,Hfolder_RES,resol_level);
-[M_KH] = M_KCalculation(image_structH,Hfolder_RES,resol_level);
+[M_JH] = M_J_Calculation(image_structH,Hfolder_RES,resol_level);
+[M_NCDH] = M__NCD_Calculation(image_structH,Hfolder_RES,resol_level);
 
 %Computes global aesthetic metrics for AI artworks
-[M_jAI] = M_jCalculation(image_structAI,AIfolder_RES,resol_level);
-[M_KAI] = M_KCalculation(image_structAI,AIfolder_RES,resol_level);
+[M_JAI] = M_J_Calculation(image_structAI,AIfolder_RES,resol_level);
+[M_NCDAI] = M_NCD_Calculation(image_structAI,AIfolder_RES,resol_level);
 
 x = linspace(1,size(image_structAI,1),size(image_structAI,1));
 
@@ -46,7 +46,7 @@ x = linspace(1,size(image_structAI,1),size(image_structAI,1));
 
 %Creates graphics for all the computed metrics.
 figure
-bar(x,[M_jAI;M_jH])
+bar(x,[M_JAI;M_JH])
 
 ylim([0.8 1])
 title('AI vs. Human Jensen-Shannon order M_J')
@@ -55,7 +55,7 @@ ylabel('M_J')
 legend('AI','Human')
 
 figure
-bar(x,[M_KAI;M_KH])
+bar(x,[M_NCDAI;M_NCDH])
 
 ylim([0.2 0.5])
 title('AI vs. Human NCD analysis M_{NCD}')
