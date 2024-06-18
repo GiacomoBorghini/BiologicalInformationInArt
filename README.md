@@ -22,6 +22,7 @@ The main code to run to get the results is contained in **Compositional_Aestheti
 * **M_J_Calculation.m**
 * **natsort.m**
 * **natsortfiles.m**
+
 The last two scripts has been taken from the File Exchange section of Matlab website (link: https://it.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort).
 To run the Compositional_Aesthetics_general.m function is important to set properly the variables that contains the path of the folders where the human and AI paintings to which we want to apply the methods are saved. 
 To run the code without modifying the _Hfolder_ and _AIfolder_ variables, located at the beginnign of Compositional_Aesthetics_general.m, is sufficient to create a folder called "ImageDatabase" containing two sub-folders called "Human" (where human paintings should be saved) and "AI" (where AI paintings should be saved) in the same Matlab workspace where the scripts are placed. 
