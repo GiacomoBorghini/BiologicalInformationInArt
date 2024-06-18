@@ -2,7 +2,11 @@
 
 In this repository is reported the Matlab code used to obtain the results of the paper presented to NanoCom 2024 conference, titled "Detection of Biological Information in Art: An Information Theoretic Perspective to Measure Creativity". The paper refers to two methods: Informational Aesthetics and Wavelet domain Hidden Markov Trees (WHMT). Here is explained how to run the Matlab code which is provided as well in this repository. 
 
+
+
 # Informational Aesthetics
+
+To run the code without modifying any variable is sufficient to create a folder called "ImageDatabase" containing two sub-folders called "Human" (where human paintings should be saved) and "AI" (where AI paintings should be saved) in the same Matlab workspace where the scripts are placed. Since this is a code designed to produce a comparison between the values of metrics obtained from couples of images (each composed of an AI and a Human painting) it's **mandatory** to **rename the images with numerical labels** (1,2,3...). Images with same label would be analyzed as a couple. The code can be used as you prefer, but it is designed to compare metrics obatined from images which are somehow related (e.g. they have same subject and artistic style).
 
 ## Global Aesthetics Measures
 The main code to run to get the results is contained in **Global_Aesthetics_general.m** . This is main function and provides the graphics of the comparison, between AI and human paintings, of the M_H and M_K metrics. To run this code is necessary to have in the same folder where the main script is saved the following functions:
