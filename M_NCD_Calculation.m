@@ -1,5 +1,6 @@
 function [M_K] = M_KCalculation(imageStrMk,folder,resol_level)
 
+mkdir("tmpComp");
 folderOUT = "tmpComp\";
 
 
