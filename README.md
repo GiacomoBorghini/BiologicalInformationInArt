@@ -1,6 +1,12 @@
 # BiologicalInformationInArt
 
-In this repository is reported the Matlab code used to obtain the results of the paper presented to NanoCom 2024 conference, titled "Detection of Biological Information in Art: An Information Theoretic Perspective to Measure Creativity". The paper refers to two methods: Informational Aesthetics and Wavelet domain Hidden Markov Trees (WHMT). Here is explained how to run the Matlab code which is provided as well in this repository. 
+In this repository is reported the Matlab code used to obtain the results of the paper presented to NanoCom 2024 conference, titled "Detection of Biological Information in Art: An Information Theoretic Perspective to Measure Creativity". The paper refers to two methods: Informational Aesthetics and Wavelet domain Hidden Markov Trees (WHMT) described in literature. Here is explained how to run the Matlab code which is provided as well in this repository. For further information on the theory behind the reported algorithms, please refer to the articles on which they are based. The articles mentioned alongside their DOI are listed below:
+
+- "Informational Aesthetics Measures" (https://doi.org/10.1109/mcg.2008.34)
+- "An information theoretic framework for image segmentation" (https://doi.org/10.1109/ICIP.2004.1419518)
+- "Quantifying self-organization with optimal wavelets" (https://doi.org/10.1209/0295-5075/102/40004)
+- "The Artists who Forged Themselves: Detecting Creativity in Art"(https://doi.org/10.48550/arXiv.1506.04356)
+
 
 
 
@@ -20,7 +26,7 @@ To run the Global_Aesthetics_general.m function is important to set properly the
 To run the code without modifying the _Hfolder_ and _AIfolder_ variables, located at the beginning of Global_Aesthetics_general.m, is sufficient to create a folder called "ImageDatabase" containing two sub-folders called "Human" (where human paintings should be saved) and "AI" (where AI paintings should be saved) in the same Matlab workspace where the scripts are placed. 
 
 ## Compositional Aesthetics Measures
-The main code to run to get the results is contained in **Compositional_Aesthetics_general.m**. This is main function and provides the graphics of the comparison, between AI and human paintings, of the M_J and M_NCD metrics. To run this code is necessary to have in the same folder where tha main script is placed the following functions:
+The main code to run to get the results is contained in **Compositional_Aesthetics_general.m**. This is the main function and provides the graphics of the comparison, between AI and human paintings, of the M_J and M_NCD metrics. To run this code is necessary to have in the same folder where tha main script is placed the following functions:
 * **resize_save.m**
 * **M_NCD_Calculation.m**
 * **M_J_Calculation.m**
@@ -31,7 +37,7 @@ The last two scripts has been taken from the File Exchange section of Matlab web
 To run the Compositional_Aesthetics_general.m function is important to set properly the variables that contains the path of the folders where the human and AI paintings to which we want to apply the methods are saved. 
 To run the code without modifying the _Hfolder_ and _AIfolder_ variables, located at the beginnign of Compositional_Aesthetics_general.m, is sufficient to create a folder called "ImageDatabase" containing two sub-folders called "Human" (where human paintings should be saved) and "AI" (where AI paintings should be saved) in the same Matlab workspace where the scripts are placed. 
 ## Mutual-Information-based Partitioning
-
+The main code to get results is contained in **Mutual_Information_Partitionig.m**. This is the main function and provides the graphis of the comparison, betweem AI and human paintings, of the result obtained by applying the Mutual-Information-based Partitiong algorithm. 
 
 
 # Wavelet domain Hidden Markov Trees
